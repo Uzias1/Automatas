@@ -40,7 +40,7 @@ public  String[][] convierteAFNtoAFD(String automataAFN[][], int filas, int colu
   String [][] error =
   {
     {"A","u","t","o","m","a","t","a"},
-    {"null","null","null","null","null","null","null","null" }, //no te preocupes, yo no muevo tus nulos xdd
+    {"null","null","null","null","null","null","null","null" }, 
     {"I","n","v","a","l","i","d","o"}  
   };
 
@@ -54,7 +54,7 @@ public  String[][] convierteAFNtoAFD(String automataAFN[][], int filas, int colu
   List <String> arreglotemp3 = new ArrayList<String>();
 
   int posicion = 0;
-  int numerodefilashechas = 0;//me quede sin creatividad
+  int numerodefilashechas = 0;
   int centinela = 1;
 
   for(int i=0; i<columnas-1; i++){
@@ -145,7 +145,7 @@ public  String[][] convierteAFNtoAFD(String automataAFN[][], int filas, int colu
 }
 
 //ordena la lista y quita los repetidos
-//recibe la lista mal devuelve lista bien xd
+//recibe la lista mal devuelve lista bien 
 public static List<String> limpiaLista(List <String> lista){
 
   List <String> listaElemSep = new ArrayList<String>();
@@ -196,7 +196,7 @@ public  int buscaEstado(String automata[][],String estado){
   return -1;
 }
 
-//valida todo el afn (falta el valida estados) ((ya no falta perra)) 
+//valida todo el afn
 public  boolean validaAFN(String automata[][], int filas, int columnas){
 
   if(!validaTipoAFN(automata,filas)){
@@ -260,7 +260,7 @@ public  boolean validaTransicionAFN(String automata[][], int filas, int columnas
   return true;
 }
 
-//Ahora tambien valida que haya alfabeto xd
+//Ahora tambien valida que haya alfabeto
 //Regresa true si está todo bien
 public  boolean validaLenguajeAFN(String automata[][], int columnas){
   int c = columnas;
